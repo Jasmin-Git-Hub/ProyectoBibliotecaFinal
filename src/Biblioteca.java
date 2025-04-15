@@ -15,7 +15,7 @@ public class Biblioteca {
         for (Libro libro1 : libros) {
             if(libro1.getISBN().equals(libro.getISBN())){
                 throw new ISBNDuplicadoException("Error el ISBN " +
-                        libro.getISBN() + " ya existe.");
+                        libro.getISBN() + "  este ISBN ya existe.");
             }
         }
         libros.add(libro); //agrega
@@ -41,7 +41,7 @@ public class Biblioteca {
             this.libro = li;
         }
         public void mostrarInformacion (){
-            System.out.println("Informacion del libro " + libro.toString());
+            System.out.println("Informacion del libro: " + libro.toString());
         }
     }
 }
